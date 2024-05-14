@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gatering Mentores</title>
+    <!--Llamar bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Enlazar CSS personalizado-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/static/style/style.css') }}">
+    </style>
+</head>
+
+<body>
+    <div class="bg-head"></div>
+    <div style="margin-bottom: 20px;"></div>
+    <!-- Barra de navegación horizontal -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand">The Gatering</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/IX">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/RH">Recursos Humanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MR">Mentores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/TR">Trainers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </div>
+
+    <div style="margin-bottom: 20px;"></div>
+    <!-- Tabla de datos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <div class="input-group">
+        <input class="form-control" id="search" onkeyup="searchTable();" placeholder="search distribution" name="s"
+            autocomplete="off" autofocus>
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" id="deviceSelector">
+                Nombre
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="javascript:void(0)" onclick="searchTableDevice(this.innerHTML)">Area</a>
+                <a class="dropdown-item" href="javascript:void(0)"
+                    onclick="searchTableDevice(this.innerHTML)">Actividades</a>
+                <a class="dropdown-item" href="javascript:void(0)"
+                    onclick="searchTableDevice(this.innerHTML)">Mentor</a>
+                <a class="dropdown-item" href="javascript:void(0)"
+                    onclick="searchTableDevice(this.innerHTML)">Observaciones</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)" onclick="searchTableDevice('all')">Todo</a>
+            </div>
+        </div>
+    </div>
+    <table id="table" class="table-striped table-hover">
+        <tr class="header">
+            <th style="width:20%;">Nombre</th>
+            <th style="width:20%;">Area</th>
+            <th style="width:20%;">Actividades</th>
+            <th style="width:20%;">Mentor</th>
+            <th style="width:20%;">Observaciones</th>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Desarrollo</td>
+            <td>Crear BD</td>
+            <td>Albert</td>
+            <td>Saca las chelas</td>
+        </tr>
+        <tr>
+            <td>Alberto</td>
+            <td>Desarrollo</td>
+            <td>Backend</td>
+            <td>Rodo</td>
+            <td>Si se arma la carnita asada</td>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>Desarrollo</td>
+            <td>Frontend</td>
+            <td>N/A</td>
+            <td>No nos pegues</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>Backend</td>
+            <td>Unificacion de BD y Backend</td>
+            <td>Rodo</td>
+            <td>Ya es viernes</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

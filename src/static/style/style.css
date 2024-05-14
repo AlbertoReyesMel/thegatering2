@@ -1,0 +1,41 @@
+.bg-head {
+    background-image: url('../Images/letras.jpg'); /* Ruta de la imagen */
+    background-size:contain; /* Cubrir todo el contenido del div */
+    background-position: center; /* Posición de la imagen en el centro */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    height: 150px; /* Altura del div */
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  #table th,
+  #table td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #table tr.header,
+  #table tr:hover {
+    background-color: #f1f1f1;
+  }

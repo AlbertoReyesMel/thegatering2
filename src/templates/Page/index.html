@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Gatering login</title>
+        <!--Llamar bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--Enlazar CSS personalizado-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='/static/style/style.css') }}">
+        </style>
+        </head>
+    <body>
+        <div class="bg-head"></div>
+        <div style="margin-bottom: 20px;"></div>
+        <!-- Barra de navegación horizontal -->
+        <div>
+        <!-- Section: Design Block -->
+<section class="">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-4 fw-bold ls-tight">
+              The Gatering proyect <br />
+              <span class="text-primary">Para el registro de trainers</span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Sistema para pode llevar el registro del proceso realizado por
+              los practicantes, trainers o becarios, llevando el control de las actividades
+              dicho control es registrado por personal de RH o los Mentores
+            </p>
+          </div>
+  
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <form>  
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="form3Example3" class="form-control" />
+                    <label class="form-label" for="form3Example3">Email address</label>
+                  </div>
+  
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="password" id="form3Example4" class="form-control" />
+                    <label class="form-label" for="form3Example4">Password</label>
+                  </div>
+  
+                  <!-- Checkbox -->
+                  <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                      <!-- Checkbox -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label mb-4" for="form2Example31"> Remember me </label>
+                      </div>
+                    </div>
+  
+                  <!-- Submit button -->
+                    <a href="/IX" type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-light bg-info btn-block mb-4">Sign up</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
+    </body>
+</html>
