@@ -1,14 +1,36 @@
+
 .bg-head {
     background-image: url('../Images/letras.jpg'); /* Ruta de la imagen */
     background-size:contain; /* Cubrir todo el contenido del div */
     background-position: center; /* Posición de la imagen en el centro */
     background-repeat: no-repeat; /* No repetir la imagen */
-    height: 150px; /* Altura del div */
+    height: 120px; /* Altura del div */
     width: 100%;
     margin-top: 10px;
     display: flex;
     align-items: center;
     
+}
+
+.navbar{
+  height: 90px;
+}
+.navbar-nav{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.nav-link:hover{
+  font-size: 25px;
+  text-shadow: 0 0 25px black;
+}
+.nav-barid{
+  font-family: "Sedan SC", serif;
+  font-size: 40px;
+  font-style: normal;
+}
+#links:hover{
+  color: white;
 }
 
 .container {
@@ -39,3 +61,49 @@
   #table tr:hover {
     background-color: #f1f1f1;
   }
+  .container-search{
+    display: flex;
+    justify-content: end;
+  }
+  .img-traine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .container-img{
+    background-image: url(../Images/ccoe.jpeg);
+    height: 700px;
+    width: 1000px;
+    border-image: fill 0 linear-gradient(rgba(255, 253, 253, 0.062), #000000d2);
+  }
+
+  #search{
+    width: 300px;
+  }
+  .container-add{
+    display: flex;
+    justify-content: end;
+    
+  }
+  .btns-add{
+    margin: 15px 10px;
+  }
+
+  .table-custom-bordered {
+    border: 5px solid #000; /* Color de borde personalizado */
+}
+.table-custom-bordered th, .table-custom-bordered td {
+  border: 2px solid #000; /* Color de borde personalizado */
+}
+
+.btn-add-notification{
+
+  margin: 10px 10px;
+}
+
+.tables-not{
+  margin: 15px 25px;
+  
+}
